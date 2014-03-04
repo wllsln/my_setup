@@ -1,0 +1,22 @@
+# Ignore emacs backups
+*~
+#*
+
+# Ignore vim temporary files
+.*.swp
+
+# Ignore Mac OS X metadata
+.DS_Store
+
+# JetBrains IDE files
+.idea
+/*.iml
+
+# Eclipse files
+.project
+
+# Vagrant files
+.vagrant
+
+# Don't commit jars
+*.jar

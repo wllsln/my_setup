@@ -34,7 +34,7 @@ install node
 install scala
 install sbt
 
-install r
+# install r
 
 # Remove outdated versions from cellar
 cleanup

@@ -17,8 +17,6 @@ class Brew
 
   def bundle
     puts "installing system dependenies via homebrew"
-    system "brew tap homebrew/dupes"
-    system "brew tap homebrew/bundle"
     system "brew bundle"
   end
 end

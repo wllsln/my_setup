@@ -13,6 +13,18 @@ sudo apt-get install ruby-full
 sudo agt-get install git
 sudo chown -R $USER /usr/local
 ```
+* If you are getting the "C++ preprocessor" error, check if you have gcc/g++ installed and install if necessary.
+```bash
+which gcc-4.8
+which g++-4.8
+sudo apt-get install gcc-4.8
+sudo apt-get install g++-4.8
+```
+* May need to symlink some system commands for cask
+```bash
+sudo ln -s /bin/readlink /usr/bin/readlink
+sudo ln -s /bin/chown /usr/bin/chown
+```
 
 ## Installation
 

@@ -1,7 +1,7 @@
 # my_setup
 
 This is my development environment scripted in Ruby.
-Documentation steps is written for Ubuntu environment
+Documentation steps is written for Ubuntu environment.
 
 ## Prerequisites
 

@@ -13,8 +13,8 @@ brew.provision
 brew.bundle
 system %Q{sudo ln -s "/usr/local/opt/r/R.framework" /Library/Frameworks}
 
-rbenv.install('2.1.1')
-rbenv.global('2.1.1')
+rbenv.install('2.2.3')
+rbenv.global('2.2.3')
 
 jar.download('http://archive.apache.org/dist/avro/avro-1.7.6/java/avro-tools-1.7.6.jar')
 

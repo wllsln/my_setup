@@ -19,6 +19,6 @@ class Brew
     puts "installing system dependenies via homebrew"
     system "brew tap homebrew/dupes"
     system "brew tap homebrew/bundle"
-    system "brew bundle Brewfile"
+    system "brew bundle"
   end
 end

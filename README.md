@@ -1,19 +1,23 @@
 # my_setup
 
 This is my development environment scripted in Ruby.
-This project here is just a courtesy for fellow devs and only works on a Mac.
-Feel free to fork this and modify to your heart's content
+Documentation steps is written for Ubuntu environment
 
 ## Prerequisites
 
-* Git (Can install from: `xcode-select --install`)
-* Ruby 2.0.0 or higher (Should have already came with OS X Mavericks)
-* [XQuartz](https://xquartz.macosforge.org/) - for installing R
+* Install Ruby
+* Install Git
+* Take ownership of /usr/local
+```bash
+sudo apt-get install ruby-full
+sudo agt-get install git
+sudo chown -R $USER /usr/local
+```
 
 ## Installation
 
 ```bash
-git clone git@github.com/ktham/my_setup.git ~/my_setup
+git clone git@github.com/wllsln/my_setup.git ~/my_setup
 cd my_setup
 ruby install.rb
 ```

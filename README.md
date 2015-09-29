@@ -17,7 +17,7 @@ sudo chown -R $USER /usr/local
 ## Installation
 
 ```bash
-git clone git@github.com/wllsln/my_setup.git ~/my_setup
+git clone git@github.com:wllsln/my_setup.git ~/my_setup
 cd my_setup
 ruby install.rb
 ```

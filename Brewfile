@@ -3,7 +3,6 @@ update
 
 # Upgrade existing formulae
 upgrade
-tap homebrew/dupes
 
 # Common dependencies
 install imagemagick

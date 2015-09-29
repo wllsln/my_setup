@@ -9,7 +9,7 @@ install imagemagick
 # Note: gfortran is required for SciPy, R
 install gfortran
 install openssl
-link --force openssl
+link openssl --force
 
 # Useful dev utilities
 install git

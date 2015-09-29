@@ -3,6 +3,7 @@ update
 
 # Upgrade existing formulae
 upgrade
+tap homebrew/dupes
 
 # Common dependencies
 install imagemagick
@@ -14,27 +15,28 @@ link --force openssl
 # Useful dev utilities
 install git
 install jq
-install htop-osx
-install phantomjs
+install htop
 install tmux
 install vim
+install the_silver_surfer
+install emacs
 
 # Python stuff
 install python
 
-# Ruby Stuff
+# Ruby stuff
 install rbenv
 install ruby-build 
 install rbenv-gem-rehash
 
 # Node stuff
-install node 
+install node
+install phantomjs
 
-# Scala stuff
-install scala
-install sbt
-
-# install r
+# install cask
+install caskroom/cask/brew-cask
+cask install sublime-text
+cask install eclipse-ide
 
 # Remove outdated versions from cellar
 cleanup

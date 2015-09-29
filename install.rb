@@ -11,7 +11,6 @@ zsh = Zsh.instance
 
 brew.provision
 brew.bundle
-system %Q{sudo ln -s "/usr/local/opt/r/R.framework" /Library/Frameworks}
 
 rbenv.install('2.2.3')
 rbenv.global('2.2.3')

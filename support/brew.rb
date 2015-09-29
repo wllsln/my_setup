@@ -12,6 +12,7 @@ class Brew
       brewfile = ENV['HOME'] + '/.linuxbrew/bin/brew'
       File.symlink(file, '/usr/local/bin/brew')  # requires chown of /usr/local/bin
     end
+    system "brew update"
   end
 
   def bundle

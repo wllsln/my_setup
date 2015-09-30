@@ -1,4 +1,5 @@
 require 'singleton'
+require 'fileutils'
 
 class Zsh
   include Singleton
@@ -11,6 +12,7 @@ class Zsh
     else
       puts "installing oh-my-zsh"
       system %Q{git clone https://github.com/robbyrussell/oh-my-zsh.git "$HOME/.oh-my-zsh"}
+      system %Q{cp "$HOME/.oh-my-zsh/templates/zshrc.zsh-template" "$HOME/.zshrc"}
     end
   end
 

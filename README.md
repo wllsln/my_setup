@@ -20,18 +20,24 @@ which g++-4.8
 sudo apt-get install gcc-4.8
 sudo apt-get install g++-4.8
 ```
-* May need to symlink some system commands for cask
+* May need to symlink some system commands and take ownership for cask
 ```bash
 sudo ln -s /bin/readlink /usr/bin/readlink
 sudo ln -s /bin/chown /usr/bin/chown
+sudo chown -R $USER:staff /opt/homebrew-cask
 ```
 
 ## Installation
 
+* Run from terminal:
 ```bash
 git clone git@github.com:wllsln/my_setup.git ~/my_setup
 cd my_setup
 ruby install.rb
+```
+* You may need to add zsh to /etc/shells for chsh to accept it
+```bash
+command -v zsh | sudo tee -a /etc/shells
 ```
 
 ## License

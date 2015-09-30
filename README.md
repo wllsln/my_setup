@@ -39,6 +39,7 @@ ruby install.rb
 ```bash
 command -v zsh | sudo tee -a /etc/shells
 ```
+Ubuntu Terminal will not reflect shell change until login.
 
 ## License
 

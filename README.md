@@ -1,22 +1,45 @@
 # my_setup
 
 This is my development environment scripted in Ruby.
-This project here is just a courtesy for fellow devs and only works on a Mac.
-Feel free to fork this and modify to your heart's content
+Documentation steps is written for Ubuntu environment.
 
 ## Prerequisites
 
-* Git (Can install from: `xcode-select --install`)
-* Ruby 2.0.0 or higher (Should have already came with OS X Mavericks)
-* [XQuartz](https://xquartz.macosforge.org/) - for installing R
+* Install Ruby
+* Install Git
+* Take ownership of /usr/local
+```bash
+sudo apt-get install ruby-full
+sudo agt-get install git
+sudo chown -R $USER /usr/local
+```
+* If you are getting the "C++ preprocessor" error, check if you have gcc/g++ installed and install if necessary.
+```bash
+which gcc-4.8
+which g++-4.8
+sudo apt-get install gcc-4.8
+sudo apt-get install g++-4.8
+```
+* May need to symlink some system commands and take ownership for cask
+```bash
+sudo ln -s /bin/readlink /usr/bin/readlink
+sudo ln -s /bin/chown /usr/bin/chown
+sudo chown -R $USER:staff /opt/homebrew-cask
+```
 
 ## Installation
 
+* Run from terminal:
 ```bash
-git clone git@github.com/ktham/my_setup.git ~/my_setup
+git clone git@github.com:wllsln/my_setup.git ~/my_setup
 cd my_setup
 ruby install.rb
 ```
+* You may need to add zsh to /etc/shells for chsh to accept it
+```bash
+command -v zsh | sudo tee -a /etc/shells
+```
+Ubuntu Terminal will not reflect shell change until login.
 
 ## License
 

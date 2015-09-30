@@ -1,40 +1,40 @@
-# Use latest version of Homebrew
-update
-
-# Upgrade existing formulae
-upgrade
-
 # Common dependencies
-install imagemagick
-# Note: gfortran is required for SciPy, R
-install gfortran
-install openssl
-link --force openssl
+tap 'homebrew/bundle'
+tap 'homebrew/dupes'
+brew 'imagemagick'
+brew 'openssl'
+# link openssl --force
+brew 'tcl-tk', args: ['without-tk']
 
 # Useful dev utilities
-install git
-install jq
-install htop-osx
-install phantomjs
-install tmux
-install vim
+brew 'curl'
+brew 'emacs'
+brew 'git'
+brew 'htop'
+brew 'jq'
+brew 'the_silver_searcher'
+brew 'tmux'
+brew 'vim'
+brew 'zsh'
+
+# Java stuff
+brew 'jenv'
 
 # Python stuff
-install python
+brew 'python'
 
-# Ruby Stuff
-install rbenv
-install ruby-build 
-install rbenv-gem-rehash
+# Ruby stuff
+brew 'rbenv'
+brew 'rbenv-gem-rehash'
+brew 'ruby-build'
 
-# Node stuff
-install node 
+## Node stuff
+# brew 'node'
+# brew 'phantomjs'
 
-# Scala stuff
-install scala
-install sbt
-
-# install r
-
-# Remove outdated versions from cellar
-cleanup
+## does not yet work with Linux
+## Cask stuff
+# tap 'caskroom/cask'
+# brew 'brew-cask'
+# cask 'eclipse-ide'
+# cask 'sublime-text'

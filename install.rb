@@ -12,6 +12,7 @@ rbenv = Rbenv.instance
 zsh = Zsh.instance
 
 brew.provision
+brew.install_ruby
 brew.bundle
 
 rbenv.install('2.2.3')

@@ -2,6 +2,7 @@ require_relative 'support/brew'
 require_relative 'support/jar'
 require_relative 'support/jenv'
 require_relative 'support/rbenv'
+require_relative 'support/vim'
 require_relative 'support/zsh'
 
 # singleton support objects
@@ -9,16 +10,17 @@ brew = Brew.instance
 jar = Jar.instance
 jenv = Jenv.instance
 rbenv = Rbenv.instance
+vim = Vim.instance
 zsh = Zsh.instance
 
 brew.provision
-brew.install_ruby
+brew.ruby_setup
 brew.bundle
 
 rbenv.install('2.2.3')
 rbenv.global('2.2.3')
 
-# jar.download('http://archive.apache.org/dist/avro/avro-1.7.6/java/avro-tools-1.7.6.jar')
+vim.provision
 
 zsh.provision
 zsh.make_default

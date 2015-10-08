@@ -85,4 +85,4 @@ source $ZSH/oh-my-zsh.sh
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which rbenv > /dev/null; then eval "$(jenv init -)"; fi
 alias eclimd="/opt/eclipse/eclimd &"
-export HOMEBREW_GITHUB_API_TOKEN=a5de50c1ee6580249fdf65533fdb48f7dc30da0e
+source ~/.profile
